@@ -44,7 +44,7 @@ Each timer can be customized with a name, hours, minutes, and seconds — and yo
 2. Installation
    npm install
 
-   # or
+   or
 
    yarn install
 

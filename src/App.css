@@ -1,0 +1,213 @@
+/* App.css - paste into src/App.css and make sure App.jsx imports ./App.css */
+
+/* Basic page */
+.app {
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  padding: 24px;
+  background: linear-gradient(180deg, #0d0f1a 0%, #12121a 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+h1 {
+  color: #00bfff;
+  margin-bottom: 12px;
+}
+
+/* top controls */
+.controls-row {
+  margin-bottom: 14px;
+}
+
+/* Add button */
+.add-btn {
+  background: linear-gradient(90deg, #00bfff, #3498db);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.add-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* container for timer cards */
+.timer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+/* timer card */
+.timer-card {
+  width: 260px;
+  background: linear-gradient(180deg, #1b1b2b, #161626);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 191, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* top row with name and delete */
+.card-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.timer-name {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Delete button top-right */
+.delete-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 80px;
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 18px;
+  width: 5px;
+  height: 15px;
+  text-align: center;
+}
+.delete-btn:hover {
+  transform: scale(1.08);
+}
+
+/* inputs area */
+.time-inputs {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* small semi-invisible arrow buttons */
+.arrow-btn {
+  background: transparent;
+  border: none;
+  color: rgba(0, 191, 255, 0.9);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px;
+  line-height: 1;
+}
+.arrow-btn:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* number input styling */
+.number-input {
+  width: 48px;
+  height: 36px;
+  text-align: center;
+  padding: 4px;
+  margin: 4px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 191, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  color: #fff;
+  font-size: 16px;
+}
+
+/* hide default spinners in webkit browsers */
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* firefox */
+.number-input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+/* small label under each unit */
+.unit-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+}
+
+/* countdown display */
+.countdown {
+  margin-top: 6px;
+  font-size: 22px;
+  color: #9be7ff;
+  font-weight: 700;
+}
+.countdown.low-time {
+  color: #ff8b8b;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.35;
+  }
+}
+
+/* buttons row */
+.timer-buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+.timer-buttons button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0, 191, 255, 0.14);
+  color: #eafcff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.timer-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+/* specific colors */
+.start-btn {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+}
+.pause-btn {
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+}
+.reset-btn {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}

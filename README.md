@@ -43,16 +43,20 @@ Each timer can be customized with a name, hours, minutes, and seconds — and yo
 
 2. Installation
 
+  ```bash
    npm install
-
+```
    or
-
+```bash
    yarn install
+```
 
 3. Start a Development Server
+  ```bash
    npm run dev
+```
 
-4. Open at Your Browser
+5. Open at Your Browser
 
 ## Roadmap / Future Improvements
 

@@ -36,7 +36,7 @@ Each timer can be customized with a name, hours, minutes, and seconds — and yo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/TrackTime-.git
+   git clone https://github.com/sujai-gowda/TrackTime-.git
    cd TrackTime-
 
    ```
